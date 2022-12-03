@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+<meta name="viewport" content="width:device-width, initial-scale=1">
+<title>Webpage</title></head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://rawcdn.githack.com/hung1001/font-awesome-pro-v6/44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+<style>
+body{
+margin:0%;
+width:auto;
+background-color:#F6F6F6;
+position:relative;
+overflow:auto;
+}
+
+a{
+text-decoration:none;
+}
+
+
+header{
+margin-bottom:20px;
+}
+
+header > .logo{
+}
+
+header > .menu{
+margin:0%;
+background-color:black;
+color:white;
+padding:2%;
+text-align:center;
+}
+
+header > .menu > ul{
+list-style:none;
+display:inline;
+overflow:auto;
+}
+
+header > .menu > ul > li{
+display:inline-block;
+margin-right:20px;
+white-space: nowrap;
+}
+
+header > .menu > a > .left-menu{
+float:left;
+}
+
+header > .menu > a{
+color:white;
+}
+
+header > .menu > a > .right-menu{
+float:right;
+color:white;
+}
+
+header > #search{
+display:none;
+background-color:;
+padding:30px;
+margin:0%
+}
+
+.show{
+display:block !important;
+}
+
+header > #search > form{
+margin-left:25%;
+}
+
+header > #search > form > input{
+padding:10px;
+width:300px;
+border:1px solid black;
+}
+
+header > #search > form > button{
+background-color:white;
+border:1px solid black;
+padding:10px;
+margin-left:4px;
+}
+
+
+.sidemenu {
+background-color: #F6F6F6;
+padding:10px;
+margin:0%;
+display:none;
+}
+
+.sidemenu > ul{
+text-align:center;
+}
+
+.sidemenu > ul > li{
+background-color:black;
+padding:10px;
+list-style-type:none;
+display:inline-block;
+color:white;
+margin-left:20px;
+font-weight:1000;
+font-family: san-serif;
+font-size:15px;
+}
+
+.pagedisplay{
+display:flex;
+}
+
+.mainleft{
+flex:5%;
+flex-direction:row;
+flex-wrap:wrap;
+background-color: #F6F6F6;
+padding:10px;
+margin-right:10px;
+}
+
+.mainleft > .lefthead{
+background-color: #f0ffff;
+color:white;
+padding:1px;
+text-align:center;
+}
+
+
+.main{
+flex:80%;
+flex-wrap:wrap;
+width:100%;
+}
+
+
+.mainright{
+flex:15%;
+flex-direction:row;
+flex-wrap:wrap;
+background-color: #F6F6F6;
+padding:30px;
+}
+
+.mainright .subscribeform{
+background-color: white;
+padding:40px;
+margin-bottom:35px;
+}
+
+.mainright > .subhead{
+background-color:#f0ffff;
+color:black;
+padding:20px;
+}
+
+.mainright .subscribeform > form > input{
+padding:15px;
+margin-bottom:3px;
+}
+
+
+.mainright .subscribeform > form > button{
+background-color:black;
+padding:10px;
+color:white;
+border: 1px solid white;
+box-shadow:1px black;
+}
+
+.mainright > .trendingposts{
+background-color:white;
+padding:20px;
+}
+
+.mainright .trendinghead{
+background-color:#f0ffff;
+color:black;
+padding:16px;
+}
+
+.mainright .trendingposts > center > nav{
+background-color:white;
+color:black;
+border:2px solid white;
+}
+
+.mainright .trendingposts > center > nav > a{
+padding:10px;
+border:1px solid white;
+color:white;
+background-color:black;
+text-decoration:none;
+}
+
+.mainright .trendingposts > .main{
+margin-top:30px;
+width:100%;
+}
+
+.showtab{
+display:block !important;
+}
+
+.hidetab{
+display:none !important;
+}
+
+.mainright .trendingposts > .main > .news > .item{
+box-shadow:2px 3px white;
+display:flex;
+flex-direction:row;
+flex-wrap:;
+border:1px solid #F0F1F3;
+}
+
+.mainright .trendingposts > .main > .news > .item > img{
+flex:40%;
+margin:2px;
+}
+
+.mainright .trendingposts > .main > .news > .item > b{
+flex:60%;
+}
+
+.mainright .trendingposts > .main > .news > .item > b > .cat{
+background-color:black;
+color:white;
+padding:4px;
+float:left;
+}
+
+.mainright .trendingposts > .main > .music{
+display:none;
+}
+
+.mainright .trendingposts > .main > .music > .item{
+box-shadow:2px 3px white;
+display:flex;
+flex-direction:row;
+flex-wrap:;
+border:1px solid #F0F1F3;
+}
+
+.mainright .trendingposts > .main > .music > .item > img{
+flex:40%;
+margin:2px;
+}
+
+.mainright .trendingposts > .main > .music > .item > b{
+flex:60%;
+}
+
+.mainright .trendingposts > .main > .music > .item > b > .cat{
+background-color:black;
+color:white;
+padding:4px;
+float:left;
+}
+
+.mainright .trendingposts > .main > .lyrics{
+display:none;
+}
+
+.mainright .trendingposts > .main > .lyrics > .item{
+box-shadow:2px 3px white;
+display:flex;
+flex-direction:row;
+flex-wrap:;
+border:1px solid #F0F1F3;
+}
+
+.mainright .trendingposts > .main > .lyrics > .item > img{
+flex:40%;
+margin:2px;
+}
+
+.mainright .trendingposts > .main > .lyrics > .item > b{
+flex:60%;
+}
+
+.mainright .trendingposts > .main > .lyrics > .item > b > .cat{
+background-color:black;
+color:white;
+padding:4px;
+float:left;
+}
+
+.mainleft > .ads{
+background-color:white;
+width:120px;
+height:600px;
+}
+
+header > .logosection {
+margin:5px;
+display:flex;
+}
+
+header > .logosection > .logo{
+flex:30%;
+}
+
+header > .logosection > .ads{
+flex:70%;
+background-color:white;
+width: 500px;
+height:90px;
+border:1px solid black;
+}
+
+.mobilenav{
+display:none;
+}
+
+.mobilelinks{
+display:none;
+}
+
+.mobilesearch{
+display:none;
+}
+
+.midsection{
+display:none;
+}
+
+.main > article{
+margin-top:10px;
+padding-top:10px;
+padding-bottom:10px;
+margin-bottom:10px;
+}
+
+.main > article > .title{
+margin-left:10px;
+font-family:anton;
+font-weight:1000;
+padding:5px;
+margin-top:30px;
+margin-bottom:3px;
+}
+
+.main > article > .subtitle, .info{
+margin-left:10px;
+margin:10px;
+}
+
+.main > .breadcrumb{
+font-weight:1000;
+font-style:bold;
+background-color:#f0ffff;
+padding:20px;
+}
+
+
+.main > article > .image{
+width:100%;
+height:700px;
+background-color:#f0ffff;
+margin-bottom:1px;
+}
+
+.main > article > .caption{
+background-color:#f0ffff;
+margin-bottom:8px;
+padding:5px;
+}
+
+.main > article > .content{
+margin:15px;
+font-family:sans-serif;
+margin-bottom:40px;
+font-size:17px;
+padding-bottom:30px;
+}
+
+
+article{
+background-color:white;
+position:relative;
+}
+
+.main > .share {
+background-color:#f0ffff;
+padding:20px;
+display:flex;
+margin-bottom:50px;
+}
+
+.main > .share > a{
+flex:10%;
+text-align:center;
+color:black;
+}
+
+.main > .comment{
+background-color:white;
+}
+
+.main > .comment > h4{
+font-size:20px;
+font-family:roboto;
+text-align:center;
+background-color:#f0ffff;
+padding:10px;
+color:black;
+}
+
+.main > .comment > form{
+margin:30px;
+}
+
+.main > .comment > form > input[type=text]{
+width:80%;
+height:50%;
+padding:2%;
+margin-bottom:5px;
+border-radius:3px;
+}
+
+.main > .comment > form > textarea{
+width:80%;
+border:1px solid black;
+padding:9%;
+border-radius:3px;
+}
+
+.main > .comment > form > button{
+background-color:black;
+padding:10px;
+color:white;
+margin-bottom:20px;
+}
+
+.main > article > a > .cat{
+background-color: black;
+color:white;
+margin:20px;
+margin-top:10px;
+padding:5px 5px 5px 5px;
+position:absolute;
+top:0%;
+left:0%;
+margin-bottom:5px;
+}
+
+.main > article > a > .cat > i{
+background-color:white;
+padding:2px;
+color:blue;
+border-radius:7px;
+}
+
+.main > article > .info > div{
+display:inline;
+margin:1px;
+padding:4px;
+font-family: open sans;
+font-weight:500;
+}
+
+.main > article > .subinfo{
+display:flex;
+flex-direction:colomn;
+padding:10px;
+margin-bottom:1px;
+text-align:center;
+}
+
+.main > article > .subinfo > a{
+max-width:20%;
+margin-left:20px;
+text-align:center;
+margin-bottom:3px;
+}
+
+.main > article > .subinfo > a {
+color:black;
+flex:50%
+}
+
+
+.main > article > .subinfo > a > p > i{
+font-size:20px;
+}
+
+
+
+.main > .related {
+padding:px;
+margin-top:8px;
+}
+
+.main > .relatedhead{
+padding:10px;
+text-align:center;
+background-color:#f0ffff;
+margin-top:12px;
+box-shadow: 1px 1px 1px lightblue; 
+color:black;
+}
+
+.main > .related > a > .post {
+display:flex;
+background-color:white;
+font-family:arial;
+font-weight:bold;
+margin-bottom:10px;
+color:black;
+box-shadow:5px 3px 2px 5px #F0F1F3;
+}
+
+.main > .related > a > .post > .item1{
+flex:50%;
+margin-left:5px;
+margin-top:10px;
+}
+
+.main > .related > a > .post > .item1{
+flex:50%;
+}
+
+.blockquote{
+background-color:#f0ffff10;
+color:black;
+font-weight:800;
+font-family:arial;
+}
+
+
+#sharepop{
+position:fixed;
+z-index:1001;
+background-color:#ffffffF5;
+width:99vw;
+height:100vh;
+top:0%;
+bottom:0%;
+display:none;
+}
+
+#sharepop > .cancelbtn{
+float:right;
+background-color:black;
+color:white;
+margin-bottom:200px;
+margin-right:20px;
+padding:5px;
+}
+
+
+#sharepop > #main{
+position:absolute;
+width:100%;
+margin:800px;
+right:0%;
+margin-top:80px;
+}
+
+#sharepop > .main{
+margin-top:100px;
+}
+
+#sharepop > .main > a > li{
+margin:40px;
+margin-top:40px;
+background-color:blue;
+max-width:70%;
+padding:20px;
+color:white;
+list-style-type:none;
+text-align:center;
+float:center;
+border:1px solid black;
+}
+
+#sharepop > .main > a > li {
+color:white;
+font-weight:900;
+}
+
+#sharepop > .main > a > li > i{
+float:right;
+height:10px;
+font-size:30px;
+color:#f0ffff;
+}
+
+.shashow{
+display:block !important;
+}
+
+.shide{
+display:none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+header > .logosection > .ads{
+background-color:red;
+}
+
+.mainleft{
+display:none;
+}
+
+.main{
+justify-content:center;
+margin-left:10px;
+}
+
+.mobilelinks{
+display:none;
+}
+
+}
+
+@media (max-width:1000px){
+header > .logosection > .ads{
+background-color:blue;
+}
+
+.pagedisplay{
+flex-wrap:wrap;
+}
+
+.trendinghead{
+display:none;
+}
+
+.trendingposts{
+display:none;
+}
+
+.mobilelinks{
+display:none;
+}
+
+.mobilesearch{
+display:none;
+}
+.main > article > .image{
+width:100%;
+height:600px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:800px){
+
+header > .logosection > .ads{
+background-color:red;
+}
+
+.main > .posts > .latestposts > .item{
+flex:35%;
+flex-wrap:wrap;
+}
+
+header{
+display:none;
+}
+
+.mobilenav{
+display:flex;
+flex-direction:colomn;
+width:100vw;
+background-color:black;
+color:white;
+padding:30px;
+margin:0%;
+margin-bottom:20px;
+position:sticky;
+z-index:999;
+max-height:30px;
+}
+
+.mobilenav > a > .menu{
+justify-content:flex-start;
+flex:10%;
+color:white;
+}
+
+.mobilenav > .logo{
+justify-content:center;
+flex:80%;
+float:center;
+}
+
+.mobilelinks > .logo > img{
+float:center;
+margin-left:50%;
+}
+
+.mobilenav > a > .search{
+justify-content:right;
+flex:10%;
+float:right;
+margin-right:0%;
+color:white;
+}
+
+.mobilenav > a > .search > i{
+float:right;
+}
+
+.mobilelinks{
+position:fixed;
+z-index:1000;
+background-color:#ffffffF5;
+width:99vw;
+height:100vh;
+overflow:scroll;
+display:none;
+}
+
+.showml{
+display:block !important;
+}
+
+.hideml{
+display:none !important;
+}
+
+.mobilelinks > div > a > i{
+margin-left:90%;
+}
+
+.mobilelinks > ul > li{
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+}
+
+.mobilelinks > ul > li > a{
+flex:100%;
+margin:0%;
+margin-top:5%;
+margin-bottom:5%;
+background-color:blue;
+padding:15px;
+color:white;
+box-shadow:4px 2px 4px 2px #ADD8E6F5;
+margin-right:50px;
+font-size:24px;
+font-fsmily:roboto
+}
+
+.mobilesearch{
+margin:10px;
+width:100%;
+display:none;
+}
+
+.mobilesearch > form{
+margin-top:0%;
+margin-left:20%;
+margin-right:20%;
+display:flex;
+margin-bottom:5%;
+}
+
+.mobilesearch > form > input[type=text]{
+height:40px;
+width: 95%;
+text-align:center;
+border-right-color:blue;
+}
+
+
+
+.mobilesearch > form > button{
+background-color:blue;
+color:white;
+padding:13px 20px 13px 20px;
+border:1px solid blue;
+}
+
+.showms{
+display:block !important;
+}
+
+.midsection{
+display:flex;
+width: 100%;
+float:center;
+flex-direction:colomn;
+}
+
+.midsection > a {
+padding: 10px;
+flex:20%;
+justify-content:space-around;
+float:center;
+color:white;
+background-color:blue;
+box-shadow:3px 2px 3px 2px black;
+margin:20px;
+text-align:center;
+}
+
+.midsection > a:first-child{
+background-color:red;
+}
+
+.midsection > a:last-child{
+background-color:purple;
+}
+
+.main > article > .image{
+width:100%;
+height:550px;
+}
+
+.main > article > .subinfo > a > p > i{
+font-size:30px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px){
+.main > .posts > a > .big-post > .item1{
+height:150px;
+}
+
+.main > .posts > .latestposts > .item {
+flex: 100%;
+width:80%;
+float:center;
+text-align:center;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:flex-center;
+margin-left:40px;
+margin-right:40px;
+margin-bottom:20px;
+margin-top:10px;
+}
+
+.main > .posts > .latestposts > .item > a > .ihead{
+text-align:center;
+width:100%;
+margin-bottom:15px;
+font-family:roboto;
+font-weight:999;
+font-size:18px;
+}
+
+.main > .posts > .latestposts > .item > a > img {
+width:100%;
+height:300px;
+}
+
+.main > article > .image{
+width:100%;
+height:400px;
+}
+
+.main > article > .subinfo > a > p > i{
+font-size:30px;
+}
+
+}
+
+
+
+</style></head>
+<body>
+
+<div id="sharepop">
+<a href="#" class="cancelbtn" id="hideshare"><i class="fa fa-times fa-2x"></i></a>
+<ul class="main">
+<a href=""><li>Share To <i class="fa fa-twitter fa-brands"></i> </li></a>
+<a href=""><li>Share To <i class="fa fa-facebook fa-brands"></i> </li></a>
+<a href=""><li>Share To <i class="fa fa-instagram fa-brands"></i></li></a>
+<a href=""><li>Share To <i class="fa fa-telegram fa-brands"></i> </li></a>
+</ul>
+</div>
+
+
+
+<header>
+<div class="logosection">
+<div class="logo"><image src="Usatoday.webp" width="100px" height="100px"/></div><div class="ads"></div>
+</div>
+
+<div class="menu">
+<a href="#" id="leftmenu"><i class="fa fa-bars fa-2x left-menu"></i></a>
+<ul>
+<li>Home</li>
+<li>Entertainment</li>
+<li>Music News</li>
+<li>Biography</li>
+<li>About</li>
+<li>Contact Us</li>
+</ul>
+<a href="#" id="rightmenu"><i class="fa-brands fa-searchengin fa-2x right-menu" ></i></a>
+</div>
+
+<div id="search">
+<form>
+<input type="text" placeholder="search"><button class="searchbtn"><i class="fa fa-search"> Search</i></button>
+</form>
+</div>
+</header>
+
+<section class="sidemenu">
+<ul>
+<li>Home</li>
+<li>News Update</li>
+<li>Entertainment</li>
+<li>Privacy Policy</li>
+</ul>
+</section>
+
+<section class="pagedisplay">
+
+
+
+
+<section class="mainleft">
+<div class="lefthead">Ads</div>
+<div class="ads">
+....
+</div>
+</section>
+
+<section class="mobilelinks">
+<div><a href="#" id="closemenu"><i class="fa fa-times fa-2x"></i></a></div>
+<ul>
+<li><a href=""><i class="fa fa-sharp fa-home"></i> Home</a></li>
+<li><a href=""><i class="fa fa-music"></i> Music</a></li>
+<li><a href=""><i class="fa fa-smile"></i> Entertainments</a></li>
+<li><a href=""><i class="fa fa-person-circle-check fa-solid"></i> Biography</a></li>
+<li><a href=""><i class="fa fa-duotone fa-book-open"></i> Lyrics</a></li>
+
+</ul>
+</section>
+<nav class="mobilenav">
+<a href="#" id="openmenu"><section class="menu">
+<i class="fa fa-bars fa-1x"></i>
+</section></a>
+
+<section class="logo">
+<img src="Usatoday.webp" width="100px" height="90px" style="margin-left:40%;float:center;max-height:50px;"/>
+</section>
+
+<a href="#" id="openmobilesearch"><section class="search">
+<i class="fa fa-search fa-1x"></i>
+</section></a>
+
+</nav>
+
+<section class="mobilesearch">
+<form>
+<input type="text" placeholder="Find a post.." minlength="4"/>
+<button type="submit">Search</button>
+</form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="main">
+
+<div class="breadcrumb"><i class="fa fa-home"></i> <a href="/">Home</a> <i class="fa fa-arrow-right"></i> <a href="/category">Entertainment</a> <i class="fa fa-arrow-right"></i> The England head coach has accepted full responsibility for the 27-13 defeat</div>
+
+
+<article>
+<a href="/category"><h5 class="cat"><i class="fa fa-newspaper fa-duotone"></i> Latest News</h5></a>
+<h2 class="title">The England head coach has accepted full responsibility for the 27-13 defeat</h2>
+
+
+<section class="info">
+ <div><i class="far fa-user-circle"></i> Article By: Foster</div> | <div><i class="far fa-clock"></i> Posted And Updated On: 24th November, 2022 | 04:20 PM</div> | <div><i class="far fa-comment-alt"></i> 2 Comments</div></section>
+
+<image class="image" src="wizkid.jpg" alt="" title=""/>
+<div class="caption"><caption><i class="fa fa-camera fa-duotone"></i> England Football Photo</caption></div>
+
+<div class="subinfo"><a href="#commentgo"><p><i class="fa fa-comment-alt fa-duotone fa-1.5x"></i><br>Comment</p></a> <a href="#" class="sharearticle"><p><i class="far fa-share-from-square fa-duotone fa-1.5x"></i><br>Share This</p></a>  <a href="#"><p><i class="far fa-gift fa-duotone fa-1.5x"></i><br>Donate</p></a> <a href=""><p><i class="far fa-envelope fa-duotone fa-1.5x"></i><br>Subscribe</p></a></div>
+
+
+
+
+
+
+<section class="content">
+Camila Cabello (born March 3, 1997) is a Cuban-American singer and songwriter, Cabello rose to prominence as when she was a member of the music group “Fifth Harmony“, Cabello was born in cuba and she has a net worth of USD $20 million – USD $30 million,  During Her Period In Fifth Harmony, Camila Cabello began to establish herself as a solo artist with the release of the music collaborations “I Know What You Did Last Summer” featuring Shawn Mendes and “Bad Things” featuring Machine Gun Kelly, she gained alot of popularity and fame during the period, this took her to reaching top four on the US Billboard Hot 100, Camila Cabello left Fifth Harmony in late 2016, and released several other music collaborations, including “Hey Ma” featuring Pitbull and J Balvin for The Fate of the Furious soundtrack (2017) and “Crying in the Club“.
+
+ 
+
+<h3>Camila Cabello’s Profile</h3>
+Contents  hide 
+I. Camila Cabello’s Profile
+II. Camila Cabello Biography & Career
+III. Camila Cabello Age
+IV. Camila Cabello Height
+V. Camila Cabello Boyfriend
+VI. Camila Cabello Parents
+VII. Sofia Cabello Sibling
+VIII. Camila Cabello Songs
+IX. Camila Cabello Albums
+X. Camila Cabello Movies
+XI. Camila Cabello Social Handles
+XII. Give This Article A Share:
+Camila Cabello Biography
+Camila Cabello
+Full Name:	Karla Camila Cabello Estrabao
+Stage Name:	Camila Cabello
+Born (Age):	March 3, 1997 (age 25 years old)
+Age:	25 years
+Place Of Birth:	Cojímar, Havana
+Nationality:	Cuba
+Occupation:	Singer, Songwriter
+Net Worth:	USD $20 million – USD $30 million
+Height:	1.57 m
+Hair Color:	Brown
+Sibling:	Sofia Cabello
+Parent(s):	Alejandro Cabello, Sinuhe Cabello Estrabao
+Boyfriend:	Nicholas Galitzine
+Also Read  Phil Jackson Net Worth, Biography, Coaching Career, Age, Wife, Girlfriend, Fired, Stats, Height
+ 
+
+<h3>Camila Cabello Biography & Career</h3>
+In 2018, Camila Cabello released her debut studio album “Camila” it reached number one on the US Billboard 200, The Latin music–influenced pop album was well-received critically and earned a Platinum certification from the Recording Industry Association of America (RIAA), Its lead single “Havana” topped charts in several countries, including the US and UK, and the follow-up single “Never Be the Same” reached the Top Ten in multiple countries. Cabello’s 2019 duet with Mendes, “Señorita”, became her second single to top the Billboard Hot 100, Her second studio album, Romance (2019), peaked at number three on the Billboard 200 chart and at number one in Canada.
+
+Camila Cabello auditioned for the TV talent competition show “The X Factor” in Greensboro, North Carolina with Aretha Franklin’s “Respect”,  however, her audition was not aired because the series did not get the rights for the song, After elimination during the “bootcamp” portion of the process in Miami, Florida, Camila Cabello was called back to the stage along with other contestants Ally Brooke, Normani, Lauren Jauregui, and Dinah Jane to form the girl group that would later become known as Fifth Harmony, After finishing in third place on the show, they signed a joint deal with Syco Music, owned by Simon Cowell, and Epic Records, L.A. Reid’s record label
+
+Also Read  Dj Sose Biography & Net Worth
+In 2021, Camila Cabello made her acting debut, starring as the title character from the movie “Cinderella”, Camila released her third studio album “Familia” on April 8, 2022, with the lead single “Don’t Go Yet” being released in July 2021 alongside the announcement of the album’s title, Cabello has amassed billions of streams on music platforms, and “Havana” became the best-selling digital single of 2018, according to the International Federation of the Phonographic Industry (IFPI), Cabello’s many awards include two Latin Grammy Awards, five American Music Awards, and one Billboard Music Award. In October 2021 “Havana” was certified Diamond by the RIAA, making Cabello the first Hispanic woman to receive this certification.
+
+ 
+
+Camila Cabello Age
+Camila Cabello Biography
+Camila Cabello
+Camila Cabello was born on 3rd of March, 1997 in Cojímar, Havana, Cuba, She Was Born By Alejandro Cabello (father) and Sinuhe Cabello Estrabao (mother), cabello lived with her parent till she grown up, Cabello comes from a spanish speaking family, so, she is very good at spanish.
+
+ 
+
+<h3>Camila Cabello Height</h3>
+Camila Cabello Has A Height Of 1.57m, while his former boyfriend “Shawn Mendes” is 6’2″ in height, Camila is 5’2″ in height.
+
+ 
+
+<h3>Camila Cabello Boyfriend</h3>
+After The Break Up Between Camila Cabello and Shawn Mendes, we suggest she might be moving to Nicholas Galitzine.
+
+Also Read  Yinka Sanni Biography & Net Worth
+ 
+
+Camila Cabello Parents
+Camila Cabello was born by  Alejandro Cabello (father) and Sinuhe Cabello Estrabao (mother) in 1997 in Cojímar, Cuba.
+
+ 
+
+Sofia Cabello Sibling
+Sofia Cabello Sibling
+Sofia Cabello Sibling
+Sofia Cabello Has only one sister whose name is “Sofia Cabello“.
+
+ 
+
+Camila Cabello Biography.
+
+</section>
+
+
+</article>
+
+<h3>Share This Article: </h3>
+<section class="share">
+<a id="fb" data-to="https://facebook.com/share.php?url=https://www.spak.ng"><i class="fa fa-facebook fa-brands fa-2x"></i></a>
+<a id="tw" data-to="https://www.twitter.com/intent/tweet?status=Hello+https://www.spak.ng"><i class="fa fa-twitter fa-brands fa-2x"></i></a>
+<a id="pt" data-to="https://www.pinterest.com/pin/create/bookmarklet/?media=https://www.spak.ng/static/image.jpg&url=https://www.spak.ng&is_video=false&description=Hello"><i class="fa fa-pinterest fa-brands fa-2x"></i></a>
+<a id="sh" data-to=""><i class="fa fa-telegram fa-brands fa-2x"></i></a>
+</section>
+
+<section class="relatedhead"><h3>Related Post</h3></section>
+<section class="related">
+
+<a href=""><div class="post">
+<div class="item1">The England head coach has accepted full responsibility for the 27-13 defeat</div><div class="item2"><image src="asake.jpg" width="150px" height="150px"/></div>
+</div></a>
+
+<a href=""><div class="post">
+<div class="item1">The England head coach has accepted full responsibility for the 27-13 defeat</div><div class="item2"><image src="asake.jpg" width="150px" height="150px"/></div>
+</div></a>
+
+<a href=""><div class="post">
+<div class="item1">The England head coach has accepted full responsibility for the 27-13 defeat</div><div class="item2"><image src="asake.jpg" width="150px" height="150px"/></div>
+</div></a>
+
+<a href=""><div class="post">
+<div class="item1">The England head coach has accepted full responsibility for the 27-13 defeat</div><div class="item2"><image src="asake.jpg" width="150px" height="150px"/></div>
+</div></a>
+
+</section>
+
+<section class="comment" id="#commentgo">
+<h4><i class="fa fa-comment-alt"></i> Post Comment</h4>
+<form>
+<input type="text" placeholder="Enter Name" minlength="3" required>
+<textarea placeholder="input comment" required></textarea><br>
+<button type="submit" required>Post Comment</button>
+</form>
+</section>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="mainright">
+<div class="subhead"><i class="fa fa-rss fa-duotone" ></i>  Subscribe For Latest Updates</div>
+<div class="subscribeform">
+<form>
+<input name="email" type="email" id="subemail" placeholder="Subscribe For Latest Updates..">
+<button type="submit" name="subscribe" id="subscribe">Subscribe</button>
+</form>
+</div>
+
+
+<div class="trendinghead"><i class="fa fa-line-chart"></i>  TRENDING ...</div>
+
+<div class="trendingposts">
+<center><nav>
+<a class="newstab">News</a> 
+<a  class="musictab">Music</a> 
+<a class="lyricstab">Lyrics</a> 
+</nav></center>
+
+<div class="main">
+<div class="news">
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> News</div></b>
+</div>
+
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> News</div></b>
+</div>
+
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> News</div></b>
+</div>
+
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> News</div></b>
+</div>
+
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> News</div></b>
+</div>
+
+</div>
+
+
+<div class="music">
+<h2>Music</h2>
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> Music</div></b>
+</div>
+
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> Music</div></b>
+</div>
+
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> Music</div></b>
+</div>
+
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> Music</div></b>
+</div>
+
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> Music</div></b>
+</div>
+</div>
+
+
+<div class="lyrics">
+<h2>Lyrics</h2>
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> Lyrics</div></b>
+</div>
+
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> Lyrics</div></b>
+</div>
+
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> Lyrics</div></b>
+</div>
+
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> Lyrics</div></b>
+</div>
+
+<div class="item">
+<img src="wizkid.jpg" width="20px" height="90px"/>
+<b>The England head coach has accepted full responsibility for the 27-13 defeat <br> <div class="cat"><i class="fa fa-tag"></i> Lyrics</div></b>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+
+
+
+
+</section>
+
+
+
+
+<script>
+$(document).ready(function(){
+$("#rightmenu").on("click", function(){
+$("#search").toggleClass("show");
+ });
+ 
+ $("#leftmenu").on("click", function(){
+ $(".sidemenu").toggleClass("show");
+ 
+ 
+ });
+ 
+ $("nav a").hover(function(e){
+ e.preventDefault();
+ $(this).css("cursor", "pointer");
+ 
+
+$(".musictab").click(function(){
+$(".music").addClass("showtab").fadeIn("slow");
+$(".news").addClass("hidetab").fadeOut("slow");
+$(".music").removeClass("hidetab").fadeIn("slow");
+$(".lyrics").addClass("hidetab").fadeOut("slow");
+});
+
+$(".newstab").click(function(){
+$(".news").addClass("showtab").fadeIn("slow");
+$(".music").addClass("hidetab").fadeOut("slow");
+$(".news").removeClass("hidetab").fadeIn("slow");
+$(".lyrics").addClass("hidetab").fadeOut("slow");
+});
+
+$(".lyricstab").click(function(){
+$(".lyrics").addClass("showtab").fadeIn("slow");
+$(".music").addClass("hidetab").slideUp("slow");
+$(".news").addClass("hidetab").slideUp("slow");
+$(".lyrics").removeClass("hidetab").fadeIn("slow");
+});
+
+  
+ });
+ 
+ 
+ 
+ 
+$("#openmenu").on("click", function(event){
+
+$(".mobilelinks").addClass("showml");
+$(".mobilelinks").removeClass("hideml");
+
+$("#closemenu").click(function(){
+$(".mobilelinks").addClass("hideml");
+$(".mobilelinks").removeClass("showml");
+});
+
+});
+
+
+
+
+$("#openmobilesearch").click(function(){
+$(".mobilesearch").toggleClass("showms");
+});
+
+
+
+$(".sharearticle").on("click", function(e){
+$("#sharepop").addClass("shashow").fadeIn();
+$("#sharepop").removeClass("shide");
+e.preventDefault();
+});
+
+$("#hideshare").click(function(e){
+$("#sharepop").addClass("shide").fadeOut(slow);
+$("#sharepop").removeClass("shashow");
+e.preventDefault();
+});
+
+
+
+$("#tw").hover(function(){
+$(this).css("cursor", "pointer");
+$("#tw").on("click", function(e){
+e.preventDefault();
+var link = $(this).attr("data-to");
+window.open(link);
+});
+});
+
+$("#fb").hover(function(){
+$(this).css("cursor", "pointer");
+$("#fb").on("click", function(e){
+e.preventDefault();
+var link = $(this).attr("data-to");
+window.open(link);
+});
+});
+
+
+$("#pt").hover(function(){
+$(this).css("cursor", "pointer");
+$("#pt").on("click", function(e){
+e.preventDefault();
+var link = $(this).attr("data-to");
+window.open(link);
+});
+});
+
+
+$("input, textarea").keyup(function(){
+$(this).css("box-shadow", "5px 3px 2px 5px #F0F1F3");
+});
+$("input, textarea").keydown(function(){
+$(this).css("border", "1px solid green");
+});
+
+});
+</script>
+
+</body>
