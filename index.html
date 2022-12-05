@@ -14,12 +14,17 @@ margin:0%;
 width:auto;
 background-color:#F6F6F6;
 position:relative;
+font-weight:900;
 }
 
 a{
 text-decoration:none;
 }
 
+button{
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+color:white;
+}
 
 header{
 margin-bottom:20px;
@@ -46,6 +51,10 @@ header > .menu > ul > li{
 display:inline-block;
 margin-right:20px;
 white-space: nowrap;
+}
+
+header > .menu > ul > li > a{
+color:white;
 }
 
 header > .menu > a > .left-menu{
@@ -113,36 +122,37 @@ font-family: san-serif;
 font-size:15px;
 }
 
+.sidemenu > ul > li > a{
+color:white;
+}
+
 .pagedisplay{
 display:flex;
 }
 
 .mainleft{
-flex:5%;
+flex:15%;
 flex-direction:row;
 flex-wrap:wrap;
 background-color: #F6F6F6;
-padding:10px;
+padding:30px;
 margin-right:10px;
 }
 
 .mainleft > .lefthead{
-background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
-color:white;
-padding:1px;
-text-align:center;
+
 }
 
 
 .main{
-flex:87%;
+flex:70%;
 flex-wrap:wrap;
-
+margin:0%;
 }
 
 
 .mainright{
-flex:8%;
+flex:15%;
 flex-direction:row;
 flex-wrap:wrap;
 background-color: #F6F6F6;
@@ -181,7 +191,7 @@ padding:2px;
 text-align:center;
 border:1px solid black;
 font-weight:1000;
-background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
 color:white;
 }
 
@@ -199,7 +209,7 @@ padding:2px;
 border:2px solid white;
 text-align:center;
 font-weight:1000;
-background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
 color:white;
 }
 
@@ -217,6 +227,15 @@ margin:4px;
 background-color:white;
 text-align:center;
 box-shadow:5px 3px 2px 5px #F0F1F3;
+position:relative;
+}
+
+
+.main > .posts > .latestposts > .item > .category{
+position:absolute;
+top:0%;
+left:0%;
+transform: translate(50, 50);
 }
 
 .main > .posts > .latestposts > .item > a > .ihead{
@@ -243,14 +262,19 @@ margin-right:10%;
 
 }
 
-.mainright .subscribeform{
+.mainright > .fixi{
+position:fixed;
+}
+
+.mainright > .subscribeform{
 background-color: white;
-padding:40px;
+padding:60px;
 margin-bottom:35px;
+position:sticky;
 }
 
 .mainright > .subhead{
-background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );;
 color:white;
 padding:20px;
 }
@@ -262,7 +286,7 @@ margin-bottom:3px;
 
 
 .mainright .subscribeform > form > button{
-background-color:blue;
+background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
 padding:10px;
 color:white;
 border: 1px solid white;
@@ -275,7 +299,7 @@ padding:20px;
 }
 
 .mainright .trendinghead{
-background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
 color:white;
 padding:16px;
 }
@@ -353,7 +377,7 @@ flex:60%;
 }
 
 .mainright .trendingposts > .main > .music > .item > b > .cat{
-background-color:black;
+background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
 color:white;
 padding:4px;
 float:left;
@@ -448,7 +472,7 @@ flex-wrap:wrap;
 
 #moresection > #sec:first-child > #item1{
 flex:100%;
-height:600px;
+height:700px;
 }
 
 #moresection > #sec:first-child > #item3{
@@ -467,7 +491,6 @@ margin-left:8px;
 }
 
 #moresectionhead{
-background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
 padding:20px;
 border-top-left-radius:10px;
 border-top-right-radius:10px;
@@ -476,6 +499,22 @@ font-size:20px;
 color:white;
 font-weight:1000;
 margin-top:40px;
+}
+
+.msh1{
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+}
+
+.msh2{
+background-image: linear-gradient( 89.4deg,  rgba(194,0,39,1) 0.8%, rgba(10,35,104,1) 99.4% );
+}
+
+.msh3{
+background-image: linear-gradient( 109.6deg,  rgba(101,58,150,1) 29.9%, rgba(168,141,194,1) 99.9% );
+}
+
+.msh4{
+background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
 }
 
 .main > #moresectionhead:nth-child(2){
@@ -537,7 +576,7 @@ background:#052962;
 
 @media (max-width:1200px){
 header > .logosection > .ads{
-background-color:red;
+background-color:#F2F2F2;
 }
 
 .mainleft{
@@ -556,9 +595,6 @@ display:none;
 }
 
 @media (max-width:1000px){
-header > .logosection > .ads{
-background-color:blue;
-}
 
 .pagedisplay{
 flex-wrap:wrap;
@@ -610,7 +646,7 @@ height:500px;
 @media (max-width:800px){
 
 header > .logosection > .ads{
-background-color:red;
+
 }
 
 .main > .posts > .latestposts > .item{
@@ -634,18 +670,20 @@ margin-bottom:20px;
 position:sticky;
 z-index:999;
 max-height:30px;
+justify-content:space-evenly;
 }
 
 .mobilenav > a > .menu{
 justify-content:flex-start;
-flex:10%;
+flex:40%;
 color:white;
 }
 
 .mobilenav > .logo{
-justify-content:center;
-flex:80%;
-float:center;
+margin-right:40px;
+flex:20%;
+
+
 }
 
 .mobilelinks > .logo > img{
@@ -655,7 +693,7 @@ margin-left:50%;
 
 .mobilenav > a > .search{
 justify-content:right;
-flex:10%;
+flex:40%;
 float:right;
 margin-right:0%;
 color:white;
@@ -715,8 +753,7 @@ display:none;
 
 .mobilesearch > form{
 margin-top:0%;
-margin-left:20%;
-margin-right:20%;
+margin-right:0%;
 display:flex;
 margin-bottom:5%;
 }
@@ -731,11 +768,10 @@ border-right-color:blue;
 
 
 .mobilesearch > form > button{
-background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
 color:white;
-padding:13px 20px 13px 20px;
-border:1px solid blue;
-border-radius:10px;
+padding:15px 20px 15px 20px;
+border:1px solid #F2F2F2;
+border-radius:1px;
 }
 
 .showms{
@@ -751,13 +787,12 @@ flex-direction:colomn;
 
 .midsection > a {
 padding: 10px;
-flex:20%;
-justify-content:space-around;
+flex:30%;
+justify-content:space-evenly;
 float:center;
 color:white;
-background-color:blue;
-box-shadow:3px 2px 3px 2px black;
-margin:20px;
+background-color: #0E223E;
+margin:10px;
 text-align:center;
 }
 
@@ -771,7 +806,7 @@ background-color:purple;
 
 #moresection > #sec:first-child > #item1{
 flex:100%;
-height:600px;
+height:700px;
 }
 
 
@@ -837,12 +872,14 @@ height:300px;
 #moresection > #sec > #item1{
 flex:40%;
 width:150px;
-height:130px;
+height:160px;
 }
 
 #moresection > #sec > #item2{
 flex:60%;
 }
+
+
 
 
 }
@@ -860,12 +897,12 @@ flex:60%;
 <div class="menu">
 <a href="#" id="leftmenu"><i class="fa fa-bars fa-2x left-menu"></i></a>
 <ul>
-<li>Home</li>
-<li>Entertainment</li>
-<li>Music News</li>
-<li>Biography</li>
-<li>About</li>
-<li>Contact Us</li>
+<li><a href="">Home</a></li>
+<li><a href="">Entertainment</a></li>
+<li><a href="">Music News</a></li>
+<li><a href="">Biography</a></li>
+<li><a href="">About</a></li>
+<li><a href="">Contact Us</a></li>
 </ul>
 <a href="#" id="rightmenu"><i class="fa-brands fa-searchengin fa-2x right-menu" ></i></a>
 </div>
@@ -879,10 +916,10 @@ flex:60%;
 
 <section class="sidemenu">
 <ul>
-<li>Home</li>
-<li>News Update</li>
-<li>Entertainment</li>
-<li>Privacy Policy</li>
+<li><a href="">Home</a></li>
+<li><a href="">News Update</a></li>
+<li><a href="">Entertainment</a></li>
+<li><a href="">Privacy Policy</a></li>
 </ul>
 </section>
 
@@ -966,7 +1003,7 @@ flex:60%;
 </div>
 
 <div class="item"><a href="">
-<img src="wizkid.jpg" class="ihead" width="30px" height="250px"/>
+<img src="wizkid.jpg" class="ihead" width="30px" height="250px" />
 <h5 class="ihead">The England head coach has accepted full responsibility for the 27-13 defeat 
 </h5></a>
 </div>
@@ -1021,10 +1058,10 @@ flex:60%;
 
 
 
-<div id="moresectionhead">Music</div>
+<div id="moresectionhead" class="msh1">Music</div>
 <section id="moresection">
 <a id="sec" href="">
-<img src="p.jpg" id="item1"/> <p id="item2">The England head coach has accepted full responsibility for the 27-13 defeat </p>
+<img src="asake.jpg" id="item1"/> <p id="item2">The England head coach has accepted full responsibility for the 27-13 defeat </p>
 </a>
 
 <a id="sec" href="">
@@ -1032,7 +1069,7 @@ flex:60%;
 </a>
 
 <a id="sec" href="">
-<img src="asake.jpg" id="item1"/> <p id="item2">The England head coach has accepted full responsibility for the 27-13 defeat </p>
+<img src="p.jpg" id="item1"/> <p id="item2">The England head coach has accepted full responsibility for the 27-13 defeat </p>
 </a>
 
 <a id="sec" href="">
@@ -1048,10 +1085,10 @@ flex:60%;
 
 
 
-<div id="moresectionhead">News</div>
+<div id="moresectionhead" class="msh2">News</div>
 <section id="moresection">
 <a id="sec" href="">
-<img src="asake.jpg" id="item1"/> <p id="item2">The England head coach has accepted full responsibility for the 27-13 defeat </p>
+<img src="k.jpg" id="item1"/> <p id="item2">The England head coach has accepted full responsibility for the 27-13 defeat </p>
 </a>
 
 <a id="sec" href="">
@@ -1064,6 +1101,34 @@ flex:60%;
 
 <a id="sec" href="">
 <img src="f.jpg" id="item1"/> <p id="item2">The England head coach has accepted full responsibility for the 27-13 defeat </p>
+</a>
+
+</section>
+<section id="more">SEE ALL...</section>
+
+
+
+
+
+
+
+
+<div id="moresectionhead" class="msh3">Lyrics</div>
+<section id="moresection">
+<a id="sec" href="">
+<img src="f.jpg" id="item1"/> <p id="item2">The England head coach has accepted full responsibility for the 27-13 defeat </p>
+</a>
+
+<a id="sec" href="">
+<img src="wizkid.jpg" id="item1"/> <p id="item2">The England head coach has accepted full responsibility for the 27-13 defeat </p>
+</a>
+
+<a id="sec" href="">
+<img src="p.jpg" id="item1"/> <p id="item2">The England head coach has accepted full responsibility for the 27-13 defeat </p>
+</a>
+
+<a id="sec" href="">
+<img src="k.jpg" id="item1"/> <p id="item2">The England head coach has accepted full responsibility for the 27-13 defeat </p>
 </a>
 
 </section>
@@ -1074,6 +1139,9 @@ flex:60%;
 
 
 <section class="mainright">
+<div class="fixi">
+
+</div>
 <div class="subhead"><i class="fa fa-rss"></i>  Subscribe For Latest Updates</div>
 <div class="subscribeform">
 <form>

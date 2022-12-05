@@ -23,6 +23,10 @@ a{
 text-decoration:none;
 }
 
+button{
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+color:white;
+}
 
 header{
 margin-bottom:20px;
@@ -335,15 +339,28 @@ display:none;
 display:none;
 }
 
+
+
+
+
+
+
+
+
+
+
+/*    article style           */
+
 .main > article{
 margin-top:10px;
 padding-top:10px;
 padding-bottom:10px;
 margin-bottom:10px;
+margin:0%;
 }
 
 .main > article > .title{
-margin-left:10px;
+margin-left:3px;
 font-family:anton;
 font-weight:1000;
 padding:5px;
@@ -369,6 +386,7 @@ width:100%;
 height:700px;
 background-color:#f0ffff;
 margin-bottom:1px;
+margin:2px;
 }
 
 .main > article > .caption{
@@ -378,7 +396,7 @@ padding:5px;
 }
 
 .main > article > .content{
-margin:15px;
+margin:6px;
 font-family:sans-serif;
 margin-bottom:40px;
 font-size:17px;
@@ -412,9 +430,9 @@ background-color:white;
 font-size:20px;
 font-family:roboto;
 text-align:center;
-background-color:#f0ffff;
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
 padding:10px;
-color:black;
+color:white;
 }
 
 .main > .comment > form{
@@ -473,14 +491,14 @@ font-weight:500;
 .main > article > .subinfo{
 display:flex;
 flex-direction:colomn;
-padding:10px;
+padding:5px;
 margin-bottom:1px;
 text-align:center;
 }
 
 .main > article > .subinfo > a{
 max-width:20%;
-margin-left:20px;
+margin-left:2px;
 text-align:center;
 margin-bottom:3px;
 }
@@ -505,10 +523,12 @@ margin-top:8px;
 .main > .relatedhead{
 padding:10px;
 text-align:center;
-background-color:#f0ffff;
+background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
 margin-top:12px;
 box-shadow: 1px 1px 1px lightblue; 
-color:black;
+color:white;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
 }
 
 .main > .related > a > .post {
@@ -542,8 +562,10 @@ font-family:arial;
 #sharepop{
 position:fixed;
 z-index:1001;
-background-color:#ffffffF5;
-width:99vw;
+background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+backdrop-filter: blue(12px);
+-webkit-backdrop-filter: blue(12px);
+width:100vw;
 height:100vh;
 top:0%;
 bottom:0%;
@@ -552,7 +574,7 @@ display:none;
 
 #sharepop > .cancelbtn{
 float:right;
-background-color:black;
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
 color:white;
 margin-bottom:200px;
 margin-right:20px;
@@ -562,22 +584,24 @@ padding:5px;
 
 #sharepop > #main{
 position:absolute;
-width:100%;
+width:30%;
 margin:800px;
 right:0%;
 margin-top:80px;
+display:grid;
 }
 
 #sharepop > .main{
 margin-top:100px;
+place-item:center;
 }
 
 #sharepop > .main > a > li{
 margin:40px;
 margin-top:40px;
-background-color:blue;
-max-width:70%;
-padding:20px;
+background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+max-width:40%;
+padding:15px;
 color:white;
 list-style-type:none;
 text-align:center;
@@ -864,6 +888,10 @@ height:550px;
 font-size:30px;
 }
 
+.main > article > .info > div{
+font-size:14px;
+}
+
 }
 
 
@@ -912,11 +940,16 @@ height:300px;
 
 .main > article > .image{
 width:100%;
-height:400px;
+height:350px;
 }
 
 .main > article > .subinfo > a > p > i{
 font-size:30px;
+}
+
+.main > .breadcrumb{
+font-size:13px;
+font-weight:600;
 }
 
 }
